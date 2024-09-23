@@ -15,7 +15,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  boot.loader.grub.device = "/dev/disk/by-label/boot"
+  boot.loader.grub.device = "/dev/disk/by-label/boot";
 
     networking.hostName = "aityz";
   networking.networkmanager.enable = true; # personally I find nmcli really good
