@@ -17,7 +17,7 @@
 
   boot.loader.grub.device = "/dev/disk/by-label/boot";
 
-    networking.hostName = "aityz";
+  networking.hostName = "aityz";
   networking.networkmanager.enable = true; # personally I find nmcli really good
 
   services.automatic-timezoned.enable = true; # automatic time zone settings
@@ -80,21 +80,21 @@
     enable = true;
     plugins = [ "git" "python" "man" ];
     theme = "agnoster";
-};
-
-# Git is like the most important thing ever
-programs.git = {
-  enable = true;
-  config = {
-    user.name = "Aito Murai";
-    user.email = "aito@outlook.com.au";
   };
-};
 
-# Set Zsh as default
+  # Git is like the most important thing ever
+  programs.git = {
+    enable = true;
+    config = {
+      user.name = "Aito Murai";
+      user.email = "aito@outlook.com.au";
+    };
+  };
 
-programs.zsh.enable = true;
-users.defaultUserShell = pkgs.zsh;
+  # Set Zsh as default
+
+  programs.zsh.enable = true;
+  users.defaultUserShell = pkgs.zsh;
 
 
   networking.firewall.enable = false; # I don't need the NixOS firewall
