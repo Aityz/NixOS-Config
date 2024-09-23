@@ -66,6 +66,9 @@
     fastfetch # How else will I flex my NixOS???
     polybar # Looks really good
     nerdfonts # I prefer Hack Nerd Font
+
+    networkmanager # Nmcli for wifi which is gud 
+    floorp # cool name
   ];
 
   # OpenGL to open Kitty etc
