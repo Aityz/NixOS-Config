@@ -91,6 +91,11 @@ programs.git = {
   };
 };
 
+# Set Zsh as default
+
+programs.zsh.enable = true;
+users.defaultUserShell = pkgs.zsh;
+
 
   networking.firewall.enable = false; # I don't need the NixOS firewall
 
