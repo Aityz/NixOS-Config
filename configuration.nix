@@ -82,7 +82,7 @@
   programs.zsh.ohMyZsh = {
     enable = true;
     plugins = [ "git" "python" "man" ];
-    theme = "agnoster";
+    theme = "robbyrussell";
   };
 
   # Git is like the most important thing ever
